@@ -1,0 +1,65 @@
+:root{
+  --red: #e50914;
+  --black: #141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--black);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .logo{
+  color: var(--red);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+
+  margin-left: 5px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px ;
+}
+
+header nav a:hover{
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* Conteúdo principal */
+.movie{
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2) 100%), url('../images/viagem-chihiro-bg.jpg') no-repeat;
+  background-size: contain ;
+
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.movie .description{
+  margin-bottom: 90px;
+
+}
+
+.movie .title{
+  font-size: 30px;
+}
+
